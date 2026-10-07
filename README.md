@@ -2,6 +2,18 @@
 
 Ce dépôt contient une série de projets développés dans le cadre de ma formation en Data Science et Intelligence Artificielle. Chaque projet explore une problématique réelle, allant de la prédiction à la cybersécurité en passant par le traitement du langage et la vision par ordinateur.
 
+## État du dépôt
+
+Le contenu disponible varie selon les dossiers :
+
+- `01_Dashboard_COVID19` contient un README, un script d’entrée, un fichier de dépendances, des captures et des sous-dossiers d’application.
+- `02_Titanic_Survival` contient un README et des dossiers de projet ; son fichier `main.py` est actuellement vide.
+- Les dossiers `03_House_Price_Prediction` à `09_Emotions_Faciales` ne contiennent pour l’instant qu’un court fichier README chacun.
+
+Les descriptions et résultats des projets 3 à 9 ci-dessous présentent donc des objectifs ou pistes de travail, et ne constituent pas la preuve que ces projets sont implémentés dans ce dépôt.
+
+---
+
 ---
 
 ## 🔍 Sommaire
