@@ -7,12 +7,20 @@ Ce dépôt contient une série de projets développés dans le cadre de ma forma
 Le contenu disponible varie selon les dossiers :
 
 - `01_Dashboard_COVID19` contient un README, un script d’entrée, un fichier de dépendances, des captures et des sous-dossiers d’application.
-- `02_Titanic_Survival` contient un README et des dossiers de projet ; son fichier `main.py` est actuellement vide.
+- `02_Titanic_Survival` contient une application dans `backend/main.py`, un modèle sérialisé, des templates et un notebook d’entraînement ; seul le fichier `main.py` placé à la racine de ce dossier est vide.
 - Les dossiers `03_House_Price_Prediction` à `09_Emotions_Faciales` ne contiennent pour l’instant qu’un court fichier README chacun.
 
 Les descriptions et résultats des projets 3 à 9 ci-dessous présentent donc des objectifs ou pistes de travail, et ne constituent pas la preuve que ces projets sont implémentés dans ce dépôt.
 
----
+## Navigation et points d’entrée
+
+| Projet | État vérifié dans le dépôt | Point d’entrée ou documentation |
+| --- | --- | --- |
+| Dashboard COVID-19 | Implémentation présente | [Instructions](./01_Dashboard_COVID19/README.md) · `01_Dashboard_COVID19/main.py` |
+| Titanic Survival | Implémentation backend présente | [Instructions](./02_Titanic_Survival/README.md) · `02_Titanic_Survival/backend/main.py` |
+| Projets 3 à 9 | Documentation minimale uniquement | Consulter le dossier correspondant ; aucun point d’entrée exécutable n’est encore versionné |
+
+Pour reproduire un projet, utiliser son README local et ses dépendances propres. Les métriques annoncées dans les sections suivantes ne sont reproductibles que lorsqu’un jeu de données, un script d’évaluation et les paramètres associés sont effectivement présents.
 
 ---
 
