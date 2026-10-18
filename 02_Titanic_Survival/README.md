@@ -74,25 +74,31 @@ uvicorn main:app --reload
 
 ## 📌 Exemple d'appel API `/predict`
 
-```json
-POST /predict
-{
-  "Pclass": 3,
-  "Sex": 1,
-  "Age": 22.0,
-  "SibSp": 1,
-  "Parch": 0,
-  "Fare": 7.25,
-  "Embarked": 0
-}
+Les champs sont obligatoires. L'ordre ci-dessous correspond aux caractéristiques utilisées dans `CreateModels/main.ipynb` et reconstruites par le backend :
+
+| Champ | Type API | Signification / encodage d'entraînement |
+| --- | --- | --- |
+| `Pclass` | entier | Classe : 1, 2 ou 3 |
+| `Sex` | entier | 0 = female, 1 = male |
+| `Age` | nombre | Âge du passager |
+| `SibSp` | entier | Nombre de frères/sœurs et conjoints à bord |
+| `Parch` | entier | Nombre de parents et enfants à bord |
+| `Fare` | nombre | Tarif du billet |
+| `Embarked` | entier | 0 = S, 1 = C, 2 = Q |
+
+Ces codes décrivent les données d'entraînement ; le modèle Pydantic actuel ne restreint pas les entiers aux catégories indiquées et ne définit pas de bornes numériques métier.
+
+Depuis un terminal compatible avec les commandes shell POSIX, une fois le serveur lancé :
+
+```bash
+curl -X POST http://localhost:8000/predict \
+  -H 'Content-Type: application/json' \
+  -d '{"Pclass":3,"Sex":1,"Age":22.0,"SibSp":1,"Parch":0,"Fare":7.25,"Embarked":0}'
 ```
 
-Réponse :
-```json
-{
-  "survived": false
-}
-```
+La réponse contient une clé `survived` de type booléen : `true` pour la classe prédite « survie », `false` sinon. La valeur dépend du modèle chargé dans `backend/model.pkl` ; l'exemple de passager ne garantit donc pas une prédiction particulière.
+
+Le serveur charge le fichier pickle dès son démarrage. N'utilisez qu'un artefact de confiance : le chargement d'un pickle peut exécuter du code. Les métriques de `/metrics` portent sur `X_test` et `y_test` enregistrés dans ce même fichier.
 
 ---
 
