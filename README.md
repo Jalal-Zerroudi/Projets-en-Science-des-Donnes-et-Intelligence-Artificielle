@@ -22,6 +22,23 @@ Les descriptions et résultats des projets 3 à 9 ci-dessous présentent donc de
 
 Pour reproduire un projet, utiliser son README local et ses dépendances propres. Les métriques annoncées dans les sections suivantes ne sont reproductibles que lorsqu’un jeu de données, un script d’évaluation et les paramètres associés sont effectivement présents.
 
+## Récupération des jeux de données avec Git LFS
+
+Le dépôt suit tous les fichiers `.csv` avec [Git LFS](https://git-lfs.com/). Après le clonage, installez Git LFS puis récupérez les objets de données avant d’exécuter les notebooks ou les scripts d’import :
+
+```bash
+git lfs install
+git lfs pull
+git lfs ls-files
+```
+
+La dernière commande doit notamment référencer les deux jeux de données actuellement versionnés :
+
+- `01_Dashboard_COVID19/Preparation Data/owid-covid-data.csv`
+- `02_Titanic_Survival/CreateModels/TitanicDataset.csv`
+
+Si un fichier CSV affiche du texte commençant par `version https://git-lfs.github.com/spec/v1` au lieu de données tabulaires, son objet LFS n’a pas encore été téléchargé ; relancez `git lfs pull` depuis la racine du dépôt.
+
 ---
 
 ## 🔍 Sommaire
