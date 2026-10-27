@@ -39,6 +39,10 @@ La dernière commande doit notamment référencer les deux jeux de données actu
 
 Si un fichier CSV affiche du texte commençant par `version https://git-lfs.github.com/spec/v1` au lieu de données tabulaires, son objet LFS n’a pas encore été téléchargé ; relancez `git lfs pull` depuis la racine du dépôt.
 
+## Fichiers générés localement
+
+Les répertoires `__pycache__/` et les fichiers `*.log` sont produits automatiquement pendant l’exécution. Ils sont exclus par `.gitignore`, ne sont pas nécessaires pour cloner ou lancer les projets et peuvent être supprimés localement sans affecter les sources. Le dashboard recrée notamment `covid_dashboard.log` au démarrage lorsque la journalisation vers un fichier est active.
+
 ---
 
 ## 🔍 Sommaire
