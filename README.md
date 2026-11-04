@@ -91,54 +91,62 @@ Les répertoires `__pycache__/` et les fichiers `*.log` sont produits automatiqu
 
 ## 📁 3. Prédiction du Prix des Maisons
 
+> **Statut : projet planifié, non implémenté dans ce dépôt.** Les éléments ci-dessous décrivent la cible envisagée et non un résultat reproductible actuel.
+
 **Objectif :** Estimer la valeur d’une maison selon ses caractéristiques (surface, nb pièces, emplacement...).
 
-- **Tâches réalisées :**
+- **Travaux prévus :**
   - Analyse statistique et sélection de variables.
   - Normalisation des données.
   - Régression linéaire, Gradient Boosting, XGBoost.
 
 - **Tech stack :** Python, Scikit-learn, Seaborn, XGBoost  
 - **Données :** Ames Housing Dataset (Kaggle)  
-- **Résultat :** RMSE ≈ 15 000
+- **Objectif indicatif :** mesurer la RMSE sur un jeu de test ; aucune valeur n’est encore vérifiée dans ce dépôt
 
 ---
 
 ## 📁 4. Détection de Fraude Bancaire
 
+> **Statut : projet planifié, non implémenté dans ce dépôt.** Les éléments ci-dessous décrivent la cible envisagée et non un résultat reproductible actuel.
+
 **Objectif :** Identifier les transactions financières potentiellement frauduleuses dans un dataset très déséquilibré.
 
-- **Tâches réalisées :**
+- **Travaux prévus :**
   - Gestion de l’équilibre des classes avec SMOTE.
   - PCA pour la réduction de dimensionnalité.
   - Classification avec RandomForest et SVM.
 
 - **Tech stack :** Python, Scikit-learn, SMOTE, Matplotlib  
 - **Données :** Credit Card Fraud Detection (Kaggle)  
-- **Résultat :** Recall ≈ 0.92 pour la classe frauduleuse
+- **Objectif indicatif :** mesurer le rappel de la classe frauduleuse ; aucune valeur n’est encore vérifiée dans ce dépôt
 
 ---
 
 ## 📁 5. Analyse de Sentiments sur Twitter
 
+> **Statut : projet planifié, non implémenté dans ce dépôt.** Les éléments ci-dessous décrivent la cible envisagée et non un résultat reproductible actuel.
+
 **Objectif :** Déterminer l'opinion (positive/négative/neutre) des utilisateurs concernant un sujet donné.
 
-- **Tâches réalisées :**
+- **Travaux prévus :**
   - Récupération de tweets avec Tweepy.
   - Prétraitement NLP : stopwords, stemming, tokenization.
   - Classification via TextBlob et Naive Bayes.
 
 - **Tech stack :** Python, Tweepy, NLTK, TextBlob  
 - **Données :** Tweets en direct via Twitter API v2  
-- **Résultat :** Précision moyenne ≈ 85%
+- **Objectif indicatif :** mesurer la précision et le F1 macro ; aucune valeur n’est encore vérifiée dans ce dépôt
 
 ---
 
 ## 📁 6. Nettoyage et Visualisation de Données Publiques
 
+> **Statut : projet planifié, non implémenté dans ce dépôt.** Les éléments ci-dessous décrivent la cible envisagée et non un résultat reproductible actuel.
+
 **Objectif :** Nettoyer et explorer visuellement des datasets publics pour révéler des tendances.
 
-- **Tâches réalisées :**
+- **Travaux prévus :**
   - Suppression des valeurs manquantes et outliers.
   - Création de visualisations interactives.
   - Exportation des rapports Power BI.
@@ -150,46 +158,52 @@ Les répertoires `__pycache__/` et les fichiers `*.log` sont produits automatiqu
 
 ## 📁 7. Détection d’Attaques DDoS
 
+> **Statut : projet planifié, non implémenté dans ce dépôt.** Les éléments ci-dessous décrivent la cible envisagée et non un résultat reproductible actuel.
+
 **Objectif :** Utiliser des modèles de classification pour détecter automatiquement des attaques DDoS dans du trafic réseau.
 
-- **Tâches réalisées :**
+- **Travaux prévus :**
   - Préparation du dataset CICIDS2017.
   - Entraînement de CNN/LSTM pour la détection.
   - Matrices de confusion, F1, Recall.
 
 - **Tech stack :** Python, Keras, Scikit-learn, Pandas  
 - **Données :** CICIDS2017 (UNB ISCX)  
-- **Résultat :** Accuracy ≈ 98.5%, Recall DDoS ≈ 0.96
+- **Objectif indicatif :** mesurer l’accuracy et le rappel DDoS ; aucune valeur n’est encore vérifiée dans ce dépôt
 
 ---
 
 ## 📁 8. Système de Recommandation
 
+> **Statut : projet planifié, non implémenté dans ce dépôt.** Les éléments ci-dessous décrivent la cible envisagée et non un résultat reproductible actuel.
+
 **Objectif :** Recommander des articles (films, livres...) à un utilisateur selon ses goûts ou profils similaires.
 
-- **Tâches réalisées :**
+- **Travaux prévus :**
   - Méthodes : filtrage collaboratif + content-based.
   - Similarité cosinus, TF-IDF, matrice utilisateur-item.
   - Interface console simple.
 
 - **Tech stack :** Python, Pandas, Scikit-learn, NLP  
 - **Données :** MovieLens 100k  
-- **Résultat :** Recommandations personnalisées en temps réel
+- **Objectif fonctionnel :** produire des recommandations personnalisées ; ce comportement n’est pas encore implémenté dans ce dépôt
 
 ---
 
 ## 📁 9. Reconnaissance d’Émotions Faciales
 
+> **Statut : projet planifié, non implémenté dans ce dépôt.** Les éléments ci-dessous décrivent la cible envisagée et non un résultat reproductible actuel.
+
 **Objectif :** Identifier les émotions humaines à partir de photos (joie, colère, peur, tristesse...).
 
-- **Tâches réalisées :**
+- **Travaux prévus :**
   - Détection de visage avec Haar cascades.
   - Entraînement d’un CNN sur FER2013.
   - Interface d'affichage des prédictions.
 
 - **Tech stack :** Python, TensorFlow, OpenCV  
 - **Données :** FER2013 (Kaggle)  
-- **Résultat :** Accuracy ≈ 65% (multi-class)
+- **Objectif indicatif :** mesurer l’accuracy et le F1 macro ; aucune valeur n’est encore vérifiée dans ce dépôt
 
 ---
 
