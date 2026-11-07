@@ -210,8 +210,8 @@ Les répertoires `__pycache__/` et les fichiers `*.log` sont produits automatiqu
 ## 📬 Contact
 
 **Jalal Zerroudi**  
-📧 [jalal.zerroudi@usmba.ac.ma]  
-🌐 [https://jalal-zerroudi.github.io/]
+📧 [jalal.zerroudi@usmba.ac.ma](mailto:jalal.zerroudi@usmba.ac.ma)  
+🌐 [jalal-zerroudi.github.io](https://jalal-zerroudi.github.io/)
 
 ---
 
