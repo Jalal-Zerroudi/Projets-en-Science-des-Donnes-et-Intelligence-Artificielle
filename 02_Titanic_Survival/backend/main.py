@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Request
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from model_handler import ModelHandler
@@ -16,13 +16,13 @@ app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 
 class Passenger(BaseModel):
-    Pclass: int
-    Sex: int
-    Age: float
-    SibSp: int
-    Parch: int
-    Fare: float
-    Embarked: int
+    Pclass: int = Field(ge=1, le=3)
+    Sex: int = Field(ge=0, le=1)
+    Age: float = Field(ge=0)
+    SibSp: int = Field(ge=0)
+    Parch: int = Field(ge=0)
+    Fare: float = Field(ge=0)
+    Embarked: int = Field(ge=0, le=2)
 
 @app.get("/", response_class=HTMLResponse)
 def home(request: Request):

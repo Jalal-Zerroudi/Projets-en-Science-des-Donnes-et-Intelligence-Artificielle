@@ -86,7 +86,7 @@ Les champs sont obligatoires. L'ordre ci-dessous correspond aux caractéristique
 | `Fare` | nombre | Tarif du billet |
 | `Embarked` | entier | 0 = S, 1 = C, 2 = Q |
 
-Ces codes décrivent les données d'entraînement ; le modèle Pydantic actuel ne restreint pas les entiers aux catégories indiquées et ne définit pas de bornes numériques métier.
+L’API valide ces contraintes avant l’inférence : `Pclass` doit être compris entre 1 et 3, `Sex` entre 0 et 1, `Embarked` entre 0 et 2, et `Age`, `SibSp`, `Parch` ainsi que `Fare` doivent être positifs ou nuls. Une valeur invalide produit une réponse HTTP `422` et le modèle n’est pas appelé.
 
 Depuis un terminal compatible avec les commandes shell POSIX, une fois le serveur lancé :
 
