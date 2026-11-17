@@ -7,7 +7,7 @@ Ce dépôt contient une série de projets développés dans le cadre de ma forma
 Le contenu disponible varie selon les dossiers :
 
 - `01_Dashboard_COVID19` contient un README, un script d’entrée, un fichier de dépendances, des captures et des sous-dossiers d’application.
-- `02_Titanic_Survival` contient une application dans `backend/main.py`, un modèle sérialisé, des templates et un notebook d’entraînement ; seul le fichier `main.py` placé à la racine de ce dossier est vide.
+- `02_Titanic_Survival` contient une application dans `backend/main.py`, un manifeste de dépendances, un modèle sérialisé, des templates et un notebook d’entraînement ; seul le fichier `main.py` placé à la racine de ce dossier est vide.
 - Les dossiers `03_House_Price_Prediction` à `09_Emotions_Faciales` ne contiennent pour l’instant qu’un court fichier README chacun.
 
 Les descriptions et résultats des projets 3 à 9 ci-dessous présentent donc des objectifs ou pistes de travail, et ne constituent pas la preuve que ces projets sont implémentés dans ce dépôt.

@@ -21,6 +21,7 @@ Ce projet propose une API web construite avec **FastAPI** pour prédire la survi
 
 ```
 Titanic_Survival/
+├── requirements.txt        # Dépendances API et entraînement
 ├── CreateModels/
 │   ├── TitanicDataset.csv
 │   ├── main.ipynb           # Préparation, entraînement et sauvegarde du modèle
@@ -40,10 +41,19 @@ Titanic_Survival/
 ### 1. Prérequis
 
 - Python 3.8+
-- Bibliothèques Python :
-  ```
-  pip install fastapi uvicorn scikit-learn pandas jinja2
-  ```
+- Git LFS pour récupérer `CreateModels/TitanicDataset.csv`
+
+Depuis le dossier `02_Titanic_Survival`, créez un environnement isolé et installez le manifeste versionné :
+
+```bash
+python -m venv .venv
+# Linux/macOS : source .venv/bin/activate
+# Windows PowerShell : .venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+Le fichier `backend/model.pkl` est un artefact pickle scikit-learn : ne le chargez que depuis une source de confiance. Si scikit-learn signale une incompatibilité de version, régénérez l'artefact avec `CreateModels/main.ipynb` dans l'environnement courant au lieu de masquer l'avertissement.
 
 ### 2. Entraîner et sauvegarder le modèle
 
