@@ -18,7 +18,13 @@ Les descriptions et résultats des projets 3 à 9 ci-dessous présentent donc de
 | --- | --- | --- |
 | Dashboard COVID-19 | Implémentation présente | [Instructions](./01_Dashboard_COVID19/README.md) · `01_Dashboard_COVID19/main.py` |
 | Titanic Survival | Implémentation backend présente | [Instructions](./02_Titanic_Survival/README.md) · `02_Titanic_Survival/backend/main.py` |
-| Projets 3 à 9 | Documentation minimale uniquement | Consulter le dossier correspondant ; aucun point d’entrée exécutable n’est encore versionné |
+| Prédiction du prix des maisons | Projet planifié | [Objectif et critères de réalisation](./03_House_Price_Prediction/README.md) |
+| Détection de fraude bancaire | Projet planifié | [Objectif et critères de réalisation](./04_Fraude_Bancaire/README.md) |
+| Analyse de sentiments sur Twitter | Projet planifié | [Objectif et critères de réalisation](./05_Sentiment_Twitter/README.md) |
+| Données publiques | Projet planifié | [Objectif et critères de réalisation](./06_Donnees_Publiques/README.md) |
+| Détection d’attaques DDoS | Projet planifié | [Objectif et critères de réalisation](./07_DDoS_Detection/README.md) |
+| Système de recommandation | Projet planifié | [Objectif et critères de réalisation](./08_Systeme_Recommandation/README.md) |
+| Reconnaissance d’émotions faciales | Projet planifié | [Objectif et critères de réalisation](./09_Emotions_Faciales/README.md) |
 
 Pour reproduire un projet, utiliser son README local et ses dépendances propres. Les métriques annoncées dans les sections suivantes ne sont reproductibles que lorsqu’un jeu de données, un script d’évaluation et les paramètres associés sont effectivement présents.
 
